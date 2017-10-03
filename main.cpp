@@ -8,6 +8,7 @@ using namespace std;
 int main (int argc, char * argv []) {
     int game = 0, location =1;
     Character player;
+    player.charname = "faggot";
     player.totalHealth = 10;
     player.printname(); 
     // Loop while game has not ended
