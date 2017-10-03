@@ -1,7 +1,9 @@
 //This file will represent all interactive features within the starting house
 
-#include "functions.hpp"
-#include "objects.hpp"
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
 
 void house() {
 
