@@ -1,3 +1,11 @@
-#include <stdio.h>
+#include <iostream>
+#include <fstream>
+#include "functions.hpp"
 
-std::cout << "Hello World!" << endl;
+using namespace std; 
+
+int main (int argc, char * argv []) {
+  
+  cout << "Hello World!" << endl;
+  cout << "I'm gay!" << endl; 
+}
