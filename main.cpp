@@ -12,7 +12,8 @@ int main (int argc, char * argv []) {
     //when the game starts, read the output file and store that in the character class
     //if the character class is null, then its a new game
     //else when it enters the loop it should jump to that location with all of the users items and stats
-    int game = 0, player.location =1;
+    int game = 0; 
+    player.location =1;
     Character player;
     player.charname = "faggot";
     player.totalHealth = 10;
