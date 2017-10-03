@@ -3,6 +3,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include "objects.hpp"
 using namespace std;
 
 void house() {
