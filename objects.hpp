@@ -3,7 +3,10 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+
 using namespace std;
+#ifndef OBJECTS_HPP
+#define OBJECTS_HPP
 
 class Character
 {
@@ -22,3 +25,6 @@ class Character
        cout << "Character name is: " << charname;
     }
 };
+
+
+#endif
