@@ -1,7 +1,9 @@
 // This file represents all features of the forest 
+#include <iostream>
+#include <fstream>
+#include <string>
 
-#include "functions.hpp"
-#include "objects.hpp"
+using namespace std;
 void forest () {
     //Inset code here
     
