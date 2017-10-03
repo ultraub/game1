@@ -37,7 +37,7 @@ void house() {
 	cout << "What would you like to do next?" << endl;
 	cout << "1. Grab torch" << endl << "2. Open chest" << endl << "3. Open door" << endl << "4. Look out window" << endl;
 	flag = 0;
-	choice 0;
+	choice = 0;
 	cin >> choice;
 		if (choice == 1) {
 			cout << "You take the torch from the wall." << endl;
