@@ -9,6 +9,7 @@ void house() {
 
 	cout << "You wake to find yourself in a small, dimly lit cabin." << endl;
 	cout << "What do you do?" << endl;
+	cout << "Your name is " << Character.printname() << endl;
 	cout << "1. Examine house" << endl << "2. Go back to sleep" << endl;
 	
 	int flag = 0;
