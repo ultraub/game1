@@ -6,7 +6,13 @@
 using namespace std; 
 
 int main (int argc, char * argv []) {
-    int game = 0, location =1;
+    //use struct to save all user data
+    //when the user reaches a new location, player.location to the new value
+    //print all values to an output file
+    //when the game starts, read the output file and store that in the character class
+    //if the character class is null, then its a new game
+    //else when it enters the loop it should jump to that location with all of the users items and stats
+    int game = 0, player.location =1;
     Character player;
     player.charname = "faggot";
     player.totalHealth = 10;
@@ -14,7 +20,7 @@ int main (int argc, char * argv []) {
     cout << endl;
     // Loop while game has not ended
     while (game!=1) {
-        switch (location) {
+        switch (player.location) {
             case 1: 
                 house();
                 break;
