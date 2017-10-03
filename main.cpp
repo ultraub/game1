@@ -10,7 +10,8 @@ int main (int argc, char * argv []) {
     Character player;
     player.charname = "faggot";
     player.totalHealth = 10;
-    player.printname(); 
+    player.printname();
+    cout << endl;
     // Loop while game has not ended
     while (game!=1) {
         switch (location) {
