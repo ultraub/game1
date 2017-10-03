@@ -30,12 +30,14 @@ void house() {
 		}
 	}
 	
+	flag = 0;
+	choice = 0;
+	while (flag == 0) {
 	cout << "What would you like to do next?" << endl;
 	cout << "1. Grab torch" << endl << "2. Open chest" << endl << "3. Open door" << endl << "4. Look out window" << endl;
 	flag = 0;
 	choice 0;
 	cin >> choice;
-	while (flag == 0) {
 		if (choice == 1) {
 			cout << "You take the torch from the wall." << endl;
 			//Possibly say it goes in primary slot?
