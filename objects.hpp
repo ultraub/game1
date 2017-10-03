@@ -14,6 +14,7 @@ class Character
     public:
 
     // 
+    int location;
     string charname;
     string primary;
     string secondary;
