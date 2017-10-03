@@ -17,8 +17,7 @@ class Character
     string charname;
     string primary;
     string secondary;
-	int totalHealth = 10;
-	int 
+    int totalHealth;
     // Member Functions()
     void printname()
     {
