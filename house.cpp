@@ -22,19 +22,22 @@ void house() {
 		}
 		else if (choice == 2) {
 			cout << "You just woke up from what seemed like a very long nap. There's no reason to go back to sleep." << endl;
-			flag = 0;
+			flag = 1;
 		}
 		else {
 			cout << "Please enter a valid command." << endl;
+			cin >> choice;
 		}
 	}
 	
 	cout << "What would you like to do next?" << endl;
 	cout << "1. Grab torch" << endl << "2. Open chest" << endl << "3. Open door" << endl << "4. Look out window" << endl;
 	flag = 0;
+	choice 0;
+	cin >> choice;
 	while (flag == 0) {
 		if (choice == 1) {
-			cout << "You take the torch from the wall." endl;
+			cout << "You take the torch from the wall." << endl;
 			//Possibly say it goes in primary slot?
 		}
 		if (choice == 2) {
