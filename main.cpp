@@ -6,5 +6,18 @@
 using namespace std; 
 
 int main (int argc, char * argv []) {
-  	house ();
+    int game = 0, location =1;
+    // Loop while game has not ended
+    while (game!=1) {
+        switch (location) {
+            case 1: 
+                house();
+                break;
+            case 2: 
+                forest();
+                break;
+            default:
+                game =1;
+        }
+    }
   }
