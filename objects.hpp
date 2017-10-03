@@ -14,7 +14,7 @@ class Character
     public:
 
     // 
-    string charname = "faggot";
+    string charname;
     string primary;
     string secondary;
 	int totalHealth = 10;
