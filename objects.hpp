@@ -26,5 +26,11 @@ class Character
     }
 };
 
+// Character
+    Character player;
+    player.location =1;
+    player.charname = "faggot";
+    player.totalHealth = 10;
+    player.printname();
 
 #endif
