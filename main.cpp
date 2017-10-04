@@ -13,11 +13,11 @@ int main (int argc, char * argv []) {
     //if the character class is null, then its a new game
     //else when it enters the loop it should jump to that location with all of the users items and stats
     int game = 0; 
-    Character player;
-    player.location =1;
-    player.charname = "faggot";
-    player.totalHealth = 10;
-    player.printname();
+ //   Character player;
+ //   player.location =1;
+  //  player.charname = "faggot";
+  //  player.totalHealth = 10;
+ //   player.printname();
     cout << endl;
     // Loop while game has not ended
     while (game!=1) {
