@@ -6,7 +6,7 @@
 #include "objects.hpp"
 using namespace std;
 
-void house() {
+int house() {
 
 	cout << "You wake to find yourself in a small, dimly lit cabin." << endl;
 	cout << "What do you do?" << endl;
@@ -52,7 +52,7 @@ void house() {
 			cout << "Beyond the door appears to be a large evergreen forest. It's hard to see much beyond that." << endl;
 			flag = 1;
 			// Change location here
-			player.location = 2;
+			return 2;
 		}
 		else if (choice == 4) {
 			cout << "You peek outside the window. The once soft light grows harshe and brighter unntil you have to look away. Your stomach contracts and twists, almost as if it's being tied in a knot. The light dies down until you are able to look back up." << endl;
