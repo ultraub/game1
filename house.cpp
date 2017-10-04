@@ -6,7 +6,7 @@
 #include "objects.hpp"
 using namespace std;
 
-int house() {
+void house() {
 
 	cout << "You wake to find yourself in a small, dimly lit cabin." << endl;
 	cout << "What do you do?" << endl;
