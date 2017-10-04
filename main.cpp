@@ -23,10 +23,10 @@ int main (int argc, char * argv []) {
     while (game!=1) {
         switch (player.location) {
             case 1: 
-                house();
+                player.location = house();
                 break;
             case 2: 
-                forest();
+                player.location = forest();
                 break;
             default:
                 game =1;
