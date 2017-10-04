@@ -5,10 +5,10 @@
 #include "objects.hpp"
 
 using namespace std;
-void forest () {
+int forest () {
     //Inset code here
     cout << "You are now in the forest" << endl;
-    
+    return 1; 
     
 }
   
