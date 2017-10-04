@@ -26,7 +26,7 @@ int main (int argc, char * argv []) {
                 house();
                 break;
             case 2: 
-                //forest();
+                forest();
                 break;
             default:
                 game =1;
