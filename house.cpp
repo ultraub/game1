@@ -4,6 +4,7 @@
 #include <fstream>
 #include <string>
 #include "objects.hpp"
+#include "character.hpp"
 using namespace std;
 
 void house() {
