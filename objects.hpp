@@ -27,6 +27,5 @@ class Character
 };
 
 // Character
-   
 
 #endif
