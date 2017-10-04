@@ -3,6 +3,7 @@
 #include <string>
 #include "functions.hpp"
 #include "objects.hpp"
+#include "character.hpp"
 using namespace std; 
 
 int main (int argc, char * argv []) {
