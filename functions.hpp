@@ -14,4 +14,5 @@ void saveData(FILE *);
 void firstFunction (int* x) {
 
 }
-void house();
+int house();
+int forest();
