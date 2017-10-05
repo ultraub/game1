@@ -8,21 +8,27 @@
 using namespace std;
 void readData (ifstream &inFile, Character& player) {
   if (inFile.is_open()) {
-	string line;
-	int number;
+	int location;
+	string name; 
+	string primary;
+	string secondary;
+	int health;
+	int damage;
     // Read from file and put in object that understands the data
-	inFile >> number;
-	player.location = number;
-	getline(inFile, line);
-	player.charname = line;
-	getline(inFile, line);
-	player.primary = line;
-	getline(inFile, line);
-	player.secondary = line;
-	inFile >> number;
-	player.totalHealth = number;
-	inFile >> number;
-	player.damage = number; 
+	inFile >> location;
+	inFile >> name;
+	inFile >> primary;
+	inFile >> secondary;
+	inFile	>> health;
+	inFile	>> damage;
+	player.location = location;
+	player.charname = name;
+	player.primary = primary;
+	player.secondary = secondary; 
+	player.totalHealth = health;
+	player.damage = damage;
+	inFile.clear();
+	inFile.seekg(0, ios::beg);
 	}
 		
 }
@@ -34,7 +40,7 @@ void saveData (ofstream &inFile, Character& player) {
 	inFile << player.primary << endl;
 	inFile << player.secondary << endl;
 	inFile << player.totalHealth << endl;
-	inFile << player.damage << endl;
+	inFile << player.damage; 
 }
 
 void setLocation (Character& player) {
@@ -43,8 +49,6 @@ void setLocation (Character& player) {
 
 
 int fightFunction (Character& player, NPC& enemy) {
-	player.totalHealth = 10;
-	player.damage = 2;
 	cout << "Your opponent has " << enemy.totalHealth << " health." << endl;
 	cout << "You have " << player.totalHealth << " health." << endl;
 	while (enemy.totalHealth > 0) {
@@ -64,19 +68,34 @@ int fightFunction (Character& player, NPC& enemy) {
 	cout << "You now have " << player.totalHealth << " health." << endl;
 }
 
-//void findNPC (ifstream &inFile, NPC& enemy, string name) {
-//  if (inFile.is_open()) {
-//	int flag = 0;
-//	string temp = name;
-//	string line;
-//	int number; 
-//	while (flag !=1) {
-//		getline(inFile, line);
-//		if (line == name) {
-//			
-    // Read from file and put in object that understands the data
-//		}
-//		
-//}
+void findNPC (ifstream &inFile, NPC& enemy, string name) {
+  if (inFile.is_open()) {
+	int flag = 0;
+	string temp = name;
+	string line;
+	string charName;
+	int damage;
+	int totalHealth;
+	int number; 
+	while (flag !=1) {
+		inFile >> line;
+		if (line == name) {
+			inFile >> charName;
+			inFile >> damage;
+			inFile >> totalHealth; 
+			enemy.charName = charName;
+			enemy.damage = damage;
+			enemy.totalHealth = totalHealth;
+			flag = 1;
+			}
+		else { 
+		cout << "File couldn't be found";
+		}
+     //Read from file and put in object that understands the data
+	}
+	inFile.clear();
+        inFile.seekg(0, ios::beg);
+	}	
+}
 
 #endif
