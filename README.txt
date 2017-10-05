@@ -19,3 +19,29 @@ is the inventory able to be called at each step as a seperate option?
 monsters should have independent classes called in a header file, and within each location the monsters can be called and have independent names so that they don't need to be referred to outside of the functions. 
 
 to determine that a monster is dead it might help to call a file at the beginning of each location with a list of monster, and if you have already killed them set that value to 1 and when you return to that location they shouldn't respawn so long as the file has been updated
+
+
+******* Important *******
+At the beginning of the location, a file should be read to see what is dead
+when the user leaves the area or quits, the file should be updated
+
+use a dynamic array to store the values a file returns and use those in the order, for example
+
+readfile -> 0 0 0 0 1 -> array
+this indicates there are 5 monsters in the area
+the function may look like :
+NPC goblin
+NPC wolf
+NPC wolf2
+NPC spider
+NPC spider2
+
+then implement 
+goblin.isDead = array[0]
+wolf.isDead = array [1]
+...
+spider2.isDead = array[4]
+
+have function that writes out to this file again, writing out the changed array values.
+If everything is dead, the file should look like 
+readfile -> 1 1 1 1 1 
