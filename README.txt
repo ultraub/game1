@@ -18,3 +18,4 @@ is the inventory able to be called at each step as a seperate option?
 
 monsters should have independent classes called in a header file, and within each location the monsters can be called and have independent names so that they don't need to be referred to outside of the functions. 
 
+to determine that a monster is dead it might help to call a file at the beginning of each location with a list of monster, and if you have already killed them set that value to 1 and when you return to that location they shouldn't respawn so long as the file has been updated
