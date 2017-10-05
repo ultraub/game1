@@ -18,7 +18,7 @@ extern int house();
 extern int forest(Character& object);
 extern void setLocation (Character& object);
 
-void fightFunction(Character& object, NPC& object1);
+int fightFunction(Character& object, NPC& object1);
 //Finds the NPC within the list and sets the NPC class to those stats
 
 void findNPC (ifstream&,NPC& object, string name);
