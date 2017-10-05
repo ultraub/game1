@@ -44,14 +44,14 @@ class NPC
     public:
 
     // 
-    string charname; 
+    string charName; 
     int damage;
     int totalHealth;
     // Member Functions()
     // Change this if we want them to say some dialogue
     void printname()
     {
-       cout << "Character name is: " << charname;
+       cout << "Character name is: " << charName;
     }
 };
 
