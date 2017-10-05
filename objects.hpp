@@ -34,4 +34,21 @@ class Items
 	int knifeDmg = 2;
 };
 
+
+class NPC
+{
+    // Access specifier
+    public:
+
+    // 
+    int damage;
+    int totalHealth;
+    // Member Functions()
+    // Change this if we want them to say some dialogue
+    void printname()
+    {
+       cout << "Character name is: " << charname;
+    }
+};
+
 #endif
