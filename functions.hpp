@@ -18,4 +18,6 @@ extern int house();
 extern int forest();
 extern void setLocation (Character& object);
 
+void fight(int, int);
+
 #endif
