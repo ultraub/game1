@@ -47,13 +47,14 @@ int fightFunction (Character& player, NPC& enemy) {
 		cout << "You attack with " << player.damage << " damage." << endl;
 		enemy.totalHealth = enemy.totalHealth - player.damage;
 		cout << "Your opponent now has " << enemy.totalHealth << " health." << endl;
-		
-		cout << "Your opponent attacks you for " << enemy.damage << " damage." << endl;
-		player.totalHealth = player.totalHealth - enemy.damage;
-		if (player.totalHealth <= 0) {
-			cout << "You have failed to defeat " << enemy.charName << " and paid the ultimate price." << endl;
-		//	Somehow tp player back to house
-		}	
+		if (enemy.totalHealth > 0) {
+			cout << "Your opponent attacks you for " << enemy.damage << " damage." << endl;
+			player.totalHealth = player.totalHealth - enemy.damage;
+			if (player.totalHealth <= 0) {
+				cout << "You have failed to defeat " << enemy.charName << " and paid the ultimate price." << endl;
+			//	Somehow tp player back to house
+			}	
+		}
 	}
 	cout << "You now have " << player.totalHealth << " health." << endl;
 }
