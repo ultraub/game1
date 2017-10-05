@@ -19,12 +19,9 @@ int forest () {
 		return 1;
 	}
 	
-	cout << "Despite that sudden encounter, you spirits begin to lift as you survey the forest around you." << endl;
-	cout << "What would you like to do next?" << endl;
+	cout << "Despite that sudden, bloody encounter, your spirits begin to lift as you survey the forest around you." << endl;
+	cout << "What would you like to do?" << endl;
 	
-	while (flag == 1) {
-		cout <<
-	}
     return 1; 
     
 }
