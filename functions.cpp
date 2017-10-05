@@ -56,7 +56,7 @@ int fightFunction (Character& player, NPC& enemy) {
 			cout << "You have " << player.totalHealth << " health." << endl;
 			if (player.totalHealth <= 0) {
 				cout << "You have failed to defeat " << enemy.charName << " and paid the ultimate price." << endl;
-			//	Somehow tp player back to house
+				break;
 			}	
 		}
 	}
