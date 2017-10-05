@@ -38,4 +38,12 @@ void setLocation (Character& player) {
 	player.location = 1;
 	}
 
+/*
+void fight (int item, int npcHealth) {
+	cout << "You have " << player.totalHealth << " health." << endl;
+	cout << "Your opponent has " << npcHealth << " health." << endl;
+	cout << "You attack with " << item << "." << endl;
+	npcHealth = npcHealth - item.dmg
+}*/
+
 #endif
