@@ -8,7 +8,12 @@ using namespace std;
 int forest () {
     
     cout << "You step outside into the forest. Before you have a chance to look around, a wolf jumps from the shadows, biting at your throat." << endl;
-    
+    NPC wolf;
+	wolf.totalHealth = 5;
+	wolf.damage = 1;
+	wolf.charname = "wolf"
+	fightFunction(player, wolf);
+	
     if (player.totalHealth >= 5) {
     	cout << "Congratulations on defeating that wolf! You didn't even break a sweat." << endl;
     }
