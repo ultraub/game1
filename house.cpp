@@ -41,6 +41,7 @@ int house() {
 		cin >> choice;
 		if (choice == 1) {
 			cout << "You take the torch from the wall." << endl;
+			cout << endl;
 			//Possibly say it goes in primary slot?
 		}
 		if (choice == 2) {
