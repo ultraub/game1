@@ -23,7 +23,7 @@ int house() {
 		}
 		else if (choice == 2) {
 			cout << "You just woke up from what seemed like a very long nap. There's no reason to go back to sleep." << endl;
-			flag = 1;
+			flag = 0;
 		}
 		else {
 			cout << "Please enter a valid command." << endl;
