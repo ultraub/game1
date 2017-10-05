@@ -14,9 +14,9 @@ int house() {
 	cout << "1. Examine house" << endl << "2. Go back to sleep" << endl;
 	int flag = 0;
 	int choice = 0;
-	cin >> choice;
 	
 	while (flag == 0) {
+		cin >> choice;
 		if (choice == 1) {
 			cout << "The house appears to be very old. There is an unlit torch on the wall, a wooden chest in the corner, a door opposite a dingy bed, and a window next to the door where a soft light shines through." << endl;
 			flag = 1;
@@ -34,11 +34,11 @@ int house() {
 	flag = 0;
 	choice = 0;
 	while (flag == 0) {
-	cout << "What would you like to do next?" << endl;
-	cout << "1. Grab torch" << endl << "2. Open chest" << endl << "3. Open door" << endl << "4. Look out window" << endl;
-	flag = 0;
-	choice = 0;
-	cin >> choice;
+		cout << "What would you like to do next?" << endl;
+		cout << "1. Grab torch" << endl << "2. Open chest" << endl << "3. Open door" << endl << "4. Look out window" << endl;
+		flag = 0;
+		choice = 0;
+		cin >> choice;
 		if (choice == 1) {
 			cout << "You take the torch from the wall." << endl;
 			//Possibly say it goes in primary slot?
