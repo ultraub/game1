@@ -10,9 +10,9 @@ int forest (Character& player) {
     
     cout << "You step outside into the forest. Before you have a chance to look around, a wolf jumps from the shadows, biting at your throat." << endl;
     NPC wolf;
-	wolf.totalHealth = 5;
-	wolf.damage = 1;
-	wolf.charName = "Wolf";
+	ifstream npcFile;
+	npcFile.open("npcList.txt");
+	findNPC(npcFile, wolf, "wolf");
 	fightFunction(player, wolf);
 	
     if (player.totalHealth >= 5) {
