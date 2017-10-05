@@ -1,0 +1,10 @@
+
+wolf 
+wolf
+1
+5
+
+goblin
+goblin
+2
+7
