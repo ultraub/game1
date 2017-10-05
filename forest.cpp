@@ -28,9 +28,10 @@ int forest (Character& player) {
 	cout << "Despite that sudden, bloody encounter, your spirits begin to lift as you survey the forest around you." << endl;
 	cout << "What would you like to do?" << endl;
 	cout << "1. Go to the left." << endl << "2. Go to the right" << endl << "3. Look up" << endl;
-	cin >> choice;
 	int flag = 0;
 	int choice = 0;
+	cin >> choice;
+	
 	
 	/*
 	while (flag == 0) {
