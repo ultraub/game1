@@ -42,7 +42,7 @@ void setLocation (Character& player) {
 int fightFunction (Character& player, NPC& enemy) {
 	player.totalHealth = 10;
 	while (enemy.totalHealth > 0) {
-		cout << "You have " << player.totalHealth << " health." << endl;
+		
 		cout << "Your opponent has " << enemy.totalHealth << " health." << endl;
 		cout << "You attack with " << player.damage << " damage." << endl;
 		enemy.totalHealth = enemy.totalHealth - player.damage;
@@ -50,6 +50,7 @@ int fightFunction (Character& player, NPC& enemy) {
 		if (enemy.totalHealth > 0) {
 			cout << "Your opponent attacks you for " << enemy.damage << " damage." << endl;
 			player.totalHealth = player.totalHealth - enemy.damage;
+			cout << "You have " << player.totalHealth << " health." << endl;
 			if (player.totalHealth <= 0) {
 				cout << "You have failed to defeat " << enemy.charName << " and paid the ultimate price." << endl;
 			//	Somehow tp player back to house
