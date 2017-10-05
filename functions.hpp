@@ -15,7 +15,7 @@ extern void readData(ifstream&,Character& object);
 extern void saveData(ofstream&, Character& object);
 void printNumber(int);
 extern int house();
-extern int forest();
+extern int forest(Character& object);
 extern void setLocation (Character& object);
 
 void fightFunction(Character& object, NPC& object);
