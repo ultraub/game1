@@ -31,7 +31,7 @@ class Items
 	public:
 	
 	string knife;
-	
+	int knifeDmg = 2;
 };
 
 #endif
