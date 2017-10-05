@@ -11,7 +11,7 @@ int forest () {
     NPC wolf;
 	wolf.totalHealth = 5;
 	wolf.damage = 1;
-	wolf.charname = "wolf"
+	wolf.charName = "Wolf"
 	fightFunction(player, wolf);
 	
     if (player.totalHealth >= 5) {
