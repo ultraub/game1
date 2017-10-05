@@ -52,10 +52,24 @@ int fightFunction (Character& player, npc& enemy) {
 		if (player.totalHealth <= 0) {
 			cout << "You have failed to defeat " << enemy.Name << " and paid the ultimate price." << endl;
 		//	Somehow tp player back to house
-		//	return something
 		}
 		cout << "You now have " << player.totalHealth << " health." << endl;
 	}
 }
+
+//void findNPC (ifstream &inFile, NPC& enemy, string name) {
+//  if (inFile.is_open()) {
+//	int flag = 0;
+//	string temp = name;
+//	string line;
+//	int number; 
+//	while (flag !=1) {
+//		getline(inFile, line);
+//		if (line == name) {
+//			
+    // Read from file and put in object that understands the data
+//		}
+//		
+//}
 
 #endif
