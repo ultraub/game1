@@ -30,7 +30,7 @@ int main (int argc, char * argv []) {
                 player.location = house();
                 break;
             case 2: 
-                player.location = forest();
+                player.location = forest(player);
                 break;
             default:
                 game =1;
