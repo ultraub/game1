@@ -44,7 +44,7 @@ int fightFunction (Character& player, NPC& enemy) {
 		cout << "You have " << player.totalHealth << " health." << endl;
 		cout << "Your opponent has " << enemy.totalHealth << " health." << endl;
 		cout << "You attack with " << player.primary << " damage." << endl;
-		enemy.totalHealth = enemy.totalHealth - primaryW.damage;
+		enemy.totalHealth = enemy.totalHealth - player.damage;
 		cout << "Your opponent now has " << enemy.totalHealth << " health." << endl;
 		
 		cout << "Your opponent attacks you for " << enemy.damage << " damage." << endl;
