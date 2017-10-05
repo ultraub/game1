@@ -26,6 +26,12 @@ class Character
     }
 };
 
-// Character
+class Items
+{
+	public:
+	
+	string knife;
+	
+};
 
 #endif
