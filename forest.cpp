@@ -30,26 +30,25 @@ int forest (Character& player) {
 	cout << "1. Go to the left." << endl << "2. Go to the right" << endl << "3. Look up" << endl;
 	int flag = 0;
 	int choice = 0;
-	cin >> choice;
 	
-	
-	/*
 	while (flag == 0) {
 		cin >> choice;
 		if (choice == 1) {
-			cout << "You begin walking " << endl;
+			cout << "You walk along the edge of the forest for about a mile until you stumble across a quaint beach. As far as you can tell, no one's been here in ages" << endl;
 			flag = 1;
+			return 3;
 		}
 		else if (choice == 2) {
-			cout << "" << endl;
+			cout << "You walk along the edge of the forest for about a mile until you notice a small, decrepit looking graveyard to your left." << endl;
 			flag = 1;
+			return 4;
 		}
 		else {
 			cout << "Please enter a valid command." << endl;
 			cin >> choice;
 		}
 	}
-	*/
+
     return 1; 
     
 }
