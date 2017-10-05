@@ -48,6 +48,7 @@ class NPC
     string charName; 
     int damage;
     int totalHealth;
+    int isDead;
     // Member Functions()
     // Change this if we want them to say some dialogue
     void printname()
