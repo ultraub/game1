@@ -21,6 +21,8 @@ void readData (ifstream &inFile, Character& player) {
 	player.secondary = line;
 	inFile >> number;
 	player.totalHealth = number;
+	inFile >> number;
+	player.damage = number; 
 	}
 		
 }
@@ -32,6 +34,7 @@ void saveData (ofstream &inFile, Character& player) {
 	inFile << player.primary << endl;
 	inFile << player.secondary << endl;
 	inFile << player.totalHealth << endl;
+	inFile << player.damage << endl;
 }
 
 void setLocation (Character& player) {
