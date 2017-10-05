@@ -21,5 +21,5 @@ extern void setLocation (Character& object);
 void fightFunction(Character& object, NPC& object);
 //Finds the NPC within the list and sets the NPC class to those stats
 
-void findNPC (ifstream&,NPC& object);
+void findNPC (ifstream&,NPC& object, string name);
 #endif
