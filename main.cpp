@@ -11,10 +11,9 @@ int main (int argc, char * argv []) {
 	ofstream outFile;
 	inFile.open("save.txt");
 	readData(inFile, player);
-	inFile.close();
-//	setLocation(player);
+	//inFile.close();
 	cout << player.location << endl << endl;
-	player.charname = "bob";
+	//player.charname = "bob";
     //use struct to save all user data
     //when the user reaches a new location, player.location to the new value
     //print all values to an output file
@@ -39,4 +38,5 @@ int main (int argc, char * argv []) {
 	saveData (outFile, player);
 	outFile.close();
     }
+inFile.close();
   }
