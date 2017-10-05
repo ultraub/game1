@@ -98,5 +98,4 @@ void findNPC (ifstream &inFile, NPC& enemy, string name) {
 	}	
 }
 
-
 #endif
