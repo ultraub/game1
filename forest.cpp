@@ -5,7 +5,7 @@
 #include "objects.hpp"
 
 using namespace std;
-int forest () {
+int forest (Character& player) {
     
     cout << "You step outside into the forest. Before you have a chance to look around, a wolf jumps from the shadows, biting at your throat." << endl;
     NPC wolf;
