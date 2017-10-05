@@ -49,7 +49,7 @@ int fightFunction (Character& player, npc& enemy) {
 		
 		cout << "Your opponent attacks you for " << npc.Damage << " damage." << endl;
 		player.totalHealth = player.totalHealth - enemy.Damage;
-		if (player.totalHealth < 0) {
+		if (player.totalHealth <= 0) {
 			cout << "You have failed to defeat " << enemy.Name << " and paid the ultimate price." << endl;
 		//	Somehow tp player back to house
 		//	return something
