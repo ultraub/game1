@@ -45,3 +45,22 @@ spider2.isDead = array[4]
 have function that writes out to this file again, writing out the changed array values.
 If everything is dead, the file should look like 
 readfile -> 1 1 1 1 1 
+
+
+**** Also important ****
+
+we might be abe to remove dialogue by only printing if the user is before a certain value
+for example, player class might have something that looks like player.progress
+
+For the first cutscene/dialogue player.progress might be 0.
+after the cutscene, player.progress might be 1 (player.progress ++)
+Have conditional statement around dialogue saying only to print off if the progress is less than 1
+next cutscene brings it up to 2
+examining objects could just remain the same, not affected by cutscenes
+
+this also might have to be done for each area, so that entering one area doesn't raise the progress so that you can't see dialogue in another area
+
+player.HouseProgress?
+player.BeachProgress?
+
+
