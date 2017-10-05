@@ -26,7 +26,7 @@ class Character
     }
 };
 
-class primaryW;
+class primaryW
 {
 	public:
 	int damage;
