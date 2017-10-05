@@ -19,7 +19,7 @@ class Character
     string primary;
     string secondary;
     int totalHealth;
-	int damage = 2;
+    int damage;
     // Member Functions()
     void printname()
     {
