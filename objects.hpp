@@ -26,12 +26,15 @@ class Character
     }
 };
 
-class Items
+class primaryW;
 {
 	public:
+	int damage;
+	void description()
+	{
+		cout << "This item has mystical properties" << endl;
+	}
 	
-	string knife;
-	int knifeDmg = 2;
 };
 
 
@@ -41,6 +44,7 @@ class NPC
     public:
 
     // 
+    string charname; 
     int damage;
     int totalHealth;
     // Member Functions()
