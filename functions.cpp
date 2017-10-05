@@ -39,7 +39,7 @@ void setLocation (Character& player) {
 	}
 
 
-int fightFunction (Character& player, npc& enemy) {
+int fightFunction (Character& player, NPC& enemy) {
 	while (enemy.Health > 0) {
 		cout << "You have " << player.totalHealth << " health." << endl;
 		cout << "Your opponent has " << enemy.totalHealth << " health." << endl;
