@@ -3,6 +3,7 @@
 #include <fstream>
 #include <string>
 #include "objects.hpp"
+#include "functions.hpp"
 
 using namespace std;
 int forest (Character& player) {
