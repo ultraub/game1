@@ -38,12 +38,24 @@ void setLocation (Character& player) {
 	player.location = 1;
 	}
 
-/*
-void fight (int item, int npcHealth) {
-	cout << "You have " << player.totalHealth << " health." << endl;
-	cout << "Your opponent has " << npcHealth << " health." << endl;
-	cout << "You attack with " << item << "." << endl;
-	npcHealth = npcHealth - item.dmg
-}*/
+
+int fightFunction (Character& player, npc& enemy) {
+	while (enemy.Health > 0) {
+		cout << "You have " << player.totalHealth << " health." << endl;
+		cout << "Your opponent has " << enemy.totalHealth << " health." << endl;
+		cout << "You attack with " << player.primary << " damage." << endl;
+		enemy.totalHealth = enemy.totalHealth - primaryW.Damage;
+		cout << "Your opponent now has " << enemy.totalHealth << " health." << endl;
+		
+		cout << "Your opponent attacks you for " << npc.Damage << " damage." << endl;
+		player.totalHealth = player.totalHealth - enemy.Damage;
+		if (player.totalHealth < 0) {
+			cout << "You have failed to defeat " << enemy.Name << " and paid the ultimate price." << endl;
+		//	Somehow tp player back to house
+		//	return something
+		}
+		cout << "You now have " << player.totalHealth << " health." << endl;
+	}
+}
 
 #endif
