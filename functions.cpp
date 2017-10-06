@@ -98,4 +98,7 @@ void findNPC (ifstream &inFile, NPC& enemy, string name) {
 	}	
 }
 
+void readIsDead (ifstream &inFile, NPC& enemy, string name) {
+	
+}
 #endif
