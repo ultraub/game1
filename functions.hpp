@@ -22,4 +22,7 @@ int fightFunction(Character& object, NPC& object1);
 //Finds the NPC within the list and sets the NPC class to those stats
 
 void findNPC (ifstream&,NPC& object, string name);
+void setIsDead (ofstream &inFile, NPC& enemy, string name, int* npcArray, int count);
+void readIsDead (ifstream &inFile, NPC& enemy, string name, int* npcArray);
+
 #endif
