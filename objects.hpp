@@ -27,7 +27,7 @@ class Character
     }
 };
 
-class primary;
+class primary
 {
 	public:
 	string name; 
