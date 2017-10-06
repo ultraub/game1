@@ -114,7 +114,7 @@ void readIsDead (ifstream &inFile, int* npcArray) {
 void setIsDead (ofstream &inFile, int* npcArray, int count) {
 	int i=0; 
 	for (i=0; i<count; i++) {
-		inFile << npcArray[i];
+		inFile << npcArray[i] << endl;
 	}
 }
 		
