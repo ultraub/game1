@@ -12,7 +12,6 @@ int forest (Character& player) {
     // Reads what monsters are dead
     forestNPC.open("forestNPC.txt");
     readIsDead (forestNPC, npcArray);
-    forestNPC.close();
 
     cout << "You step outside into the forest. Before you have a chance to look around, a wolf jumps from the shadows, biting at your throat." << endl;
     NPC wolf;
@@ -33,6 +32,7 @@ int forest (Character& player) {
 			return 1;
 			}
 	}
+	setIsDead (forestNPC, npcArray, 4);
 	
 	cout << "Despite that sudden, bloody encounter, your spirits begin to lift as you survey the forest around you." << endl;
 	cout << "What would you like to do?" << endl;
@@ -57,9 +57,7 @@ int forest (Character& player) {
 			cin >> choice;
 		}
 	}
-    fstream forestNPC;
     forestNPC.open("forestNPC.txt");
-    setIsDead (forestNPC, npcArray, 4);
     forestNPC.close();
     return 1; 
     
