@@ -1,10 +1,15 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
 #include "objects.hpp"
 #include "functions.hpp"
 #include "character.hpp"
 using namespace std; 
+primary weapon[0];
+damage.weapon[0] = 2;
+cout << damage.weapon[0]; << endl;
+
 int main (int argc, char * argv []) {
 	Character player;
 	ifstream inFile;
