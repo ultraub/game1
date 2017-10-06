@@ -27,15 +27,18 @@ class Character
     }
 };
 
-class primaryW
+class inventory
 {
 	public:
-	int damage;
-	void description()
-	{
-		cout << "This item has mystical properties" << endl;
-	}
 	
+	class Weapon {
+		public: 
+		int damage;
+		void description()
+			{
+			cout << "This item has mystical properties" << endl;
+			}
+	};	
 };
 
 
