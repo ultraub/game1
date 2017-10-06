@@ -8,7 +8,7 @@
 using namespace std;
 int forest (Character& player) {
     int npcArray[4];
-    ifstream forestNPC;
+    fstream forestNPC;
     // Reads what monsters are dead
     forestNPC.open("forestNPC.txt");
     readIsDead (forestNPC, npcArray);
@@ -57,7 +57,7 @@ int forest (Character& player) {
 			cin >> choice;
 		}
 	}
-    ofstream forestNPC;
+    fstream forestNPC;
     forestNPC.open("forestNPC.txt");
     setIsDead (forestNPC, npcArray, 4);
     forestNPC.close();
