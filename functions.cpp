@@ -98,7 +98,24 @@ void findNPC (ifstream &inFile, NPC& enemy, string name) {
 	}	
 }
 
-void readIsDead (ifstream &inFile, NPC& enemy, string name) {
-	
+void readIsDead (ifstream &inFile, NPC& enemy, string name, int* npcArray) {
+	int i=0;
+	int line = 0;
+	while (!inFile.eof()) {
+		inFile >> line;
+		npcArray[i] = line;
+		i++;		
+		}
+     //Read from file and put in object that understands the data
+	inFile.clear();
+        inFile.seekg(0, ios::beg);
 }
+
+void setIsDead (ofstream &inFile, NPC& enemy, string name, int* npcArray, int count) {
+	int i=0; 
+	for (i=0; i<count; i++) {
+		inFile << npcArray[i];
+	}
+}
+		
 #endif
