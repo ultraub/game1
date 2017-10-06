@@ -1,5 +1,4 @@
-wolf 
+0 
 0
-goblin 
 0
-
+0
