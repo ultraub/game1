@@ -1,0 +1,6 @@
+1
+bob
+sword
+torch
+10
+1
