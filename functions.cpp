@@ -32,7 +32,33 @@ void readData (ifstream &inFile, Character& player) {
 	}
 		
 }
-
+void readInventory (fstream &inFile, primary weaponArr[]) {
+	string line;
+	int value, i=0;
+	while (!inFile.eof()) {
+                inFile >> line;
+                weaponArr[i].name = line;
+		inFile >> value;
+		weaponArr[i].damage = value;
+		inFile >> value; 
+		weaponArr[i].equipped = value;
+		inFile >> value;
+		weaponArr[i].found = value;
+                i++;
+                }
+	inFile.clear();
+        inFile.seekg(0, ios::beg);
+}
+void writeInventory (fstream &inFile, primary weaponArr[], int count)  {
+	int i=0;
+	while (i<count) {
+		inFile << weaponArr[i].name << endl;
+		inFile << weaponArr[i].damage << endl;
+		inFile << weaponArr[i].equipped << endl;
+		inFile << weaponArr[i].found << endl;
+		i++;
+	}
+}
 void saveData (ofstream &inFile, Character& player) {
     // Writes to file with whatever is inside the object so it can be read later
 	inFile << player.location << endl;
@@ -117,5 +143,14 @@ void setIsDead (fstream &inFile, int* npcArray, int count) {
 		inFile << npcArray[i] << endl;
 	}
 }
-		
+
+void findEquipped (primary weaponArr[],Character& player, int count) {
+	for (int i=0; i<count; i++) {
+		if(weaponArr[i].equipped == 1) {
+			player.damage = weaponArr[i].damage;
+			player.primary = weaponArr[i].name;
+			}
+	}
+}
+					
 #endif

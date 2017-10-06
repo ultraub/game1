@@ -1,6 +1,6 @@
 1
 bob
-hands
+sword
 torch
 10
-2
+1

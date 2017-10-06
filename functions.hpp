@@ -24,5 +24,8 @@ int fightFunction(Character& object, NPC& object1);
 void findNPC (ifstream&,NPC& object, string name);
 void setIsDead (fstream &inFile, int* npcArray, int count);
 void readIsDead (fstream &inFile, int* npcArray);
+void readInventory (fstream &inFile, primary weaponArr[]);
+void writeInventory (fstream &inFile, primary weaponArr[], int count);
+void findEquipped (primary weaponArr[],Character& player, int count);
 
 #endif
