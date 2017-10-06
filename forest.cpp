@@ -7,22 +7,29 @@
 
 using namespace std;
 int forest (Character& player) {
-    
+    int npcArray[4];
+    ifstream forestNPC;
+    // Reads what monsters are dead
+    forestNPC.open("forestNPC.txt");
+    readIsDead (forestNPC, npcArray);
+    forestNPC.close();
+
     cout << "You step outside into the forest. Before you have a chance to look around, a wolf jumps from the shadows, biting at your throat." << endl;
     NPC wolf;
 	ifstream npcFile;
 	npcFile.open("npcList.txt");
 	findNPC(npcFile, wolf, "wolf");
-	fightFunction(player, wolf);
-	
-    if (player.totalHealth >= 5) {
-    	cout << "Congratulations on defeating that wolf! You didn't even break a sweat." << endl;
-    }
-    else if (player.totalHealth < 5 && player.totalHealth > 0) {
-    	cout << "Congratulations on defeating that wolf! You barely survived though." << endl;
-    }
-	else {
-		return 1;
+	if (npcArray[0] == 0) {		
+		fightFunction(player, wolf);
+    		if (player.totalHealth >= 5) {
+    			cout << "Congratulations on defeating that wolf! You didn't even break a sweat." << endl;
+    			}
+    		else if (player.totalHealth < 5 && player.totalHealth > 0) {
+    			cout << "Congratulations on defeating that wolf! You barely survived though." << endl;
+    			}
+		else {
+			return 1;
+			}
 	}
 	
 	cout << "Despite that sudden, bloody encounter, your spirits begin to lift as you survey the forest around you." << endl;
@@ -48,7 +55,10 @@ int forest (Character& player) {
 			cin >> choice;
 		}
 	}
-
+    ofstream forestNPC;
+    forestNPC.open("forestNPC.txt");
+    setIsDead (forestNPC, npcArray, 4);
+    forestNPC.close();
     return 1; 
     
 }
