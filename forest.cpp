@@ -23,9 +23,11 @@ int forest (Character& player) {
 		fightFunction(player, wolf);
     		if (player.totalHealth >= 5) {
     			cout << "Congratulations on defeating that wolf! You didn't even break a sweat." << endl;
+			npcArray[0]=1;
     			}
     		else if (player.totalHealth < 5 && player.totalHealth > 0) {
     			cout << "Congratulations on defeating that wolf! You barely survived though." << endl;
+			npcArray[0]=1;
     			}
 		else {
 			return 1;
