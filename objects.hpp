@@ -69,4 +69,14 @@ class NPC
     }
 };
 
+class armor
+{
+	public:
+	
+	string name;
+	int bonusHealth;
+	int equipped;
+	int found;
+};
+
 #endif
