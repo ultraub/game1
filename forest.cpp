@@ -56,7 +56,7 @@ int forest (Character& player) {
 		else if (choice == 3) {
 			cout << "You gaze at the forest around you. The tall evergreens shift slightly in the wind. Above you, the sun begins its descent in the sky and you guess you have at least an hour until it is set. Despite how ancient the house looks, it holds a comforting air about it. The air is cool and eerily silent." << endl;
 			cout << "Would you like to walk around the house?" << endl;
-			cout << "1. Yes" << endl << "2. No" << endl;
+		cout << "1. Yes" << endl << "2. No" << endl;
 			while (flag == 0) {
 				cin >> choice;
 				if (choice == 1) {
@@ -70,8 +70,9 @@ int forest (Character& player) {
 							cout << "You found a leather helmet." << endl;
 							//Set leatherHelmet = 1
 							flag++;
-						else if (choice == 2) {
-							cout >> "You return to the front of the house." << endl;
+							}
+					else if (choice == 2) {
+							cout << "You return to the front of the house." << endl;
 							flag++;
 						}
 						else {
@@ -79,6 +80,7 @@ int forest (Character& player) {
 							cin >> choice;
 						}
 					}
+				}
 					else if (choice == 2) {
 						flag++;
 					}
@@ -88,12 +90,11 @@ int forest (Character& player) {
 					}
 				}
 			}
-		}
 		else {
 			cout << "Please enter a valid command." << endl;
 			cin >> choice;
 		}
-	}
+}
     forestNPC.open("forestNPC.txt");
     forestNPC.close();
     return 1; 
