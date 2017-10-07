@@ -40,6 +40,9 @@ cout << player.damage << " " << player.primary << endl;
             case 2: 
                 player.location = forest(player);
                 break;
+			case 3: 
+				player.location = beach(player);
+				break;
             default:
                 game =1;
         }
