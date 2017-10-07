@@ -6,29 +6,28 @@
 #include "functions.hpp"
 
 using namespace std;
-int forest (Character& player) {
+int beach (Character& player) {
     int npcArray[4];
-	int flag = 1;
+	int flag = 0;
 	int choice;
 	string response; 
     fstream beachNPC;
     // Reads what monsters are dead
     beachNPC.open("beachNPC.txt");
     readIsDead (beachNPC, npcArray);
-    NPC shadow;
-	
+    NPC shadow;	
 	// Make sure this goes away if progress reaches beyond it
 	cout << "You walk along the beach, feeling smooth pebbles press into your feet as you move toward the water." << endl;
 	cout << "You notice a man sitting on a fallen tree. His body looks disfigured but it's too dark to make anything out clearly." << endl;
 	
 	cout << "Do you want to approach the man?" << endl;
 	while (flag !=1) {
-		cin >> string;
-		if (string == "yes") {
+		cin >> response;
+		if (response == "yes") {
 			flag = 1;
 			choice = 1;
 		}
-		else if (string == "no") {
+		else if (response == "no") {
 			flag = 1;
 			choice = 0;
 		}
@@ -40,7 +39,7 @@ int forest (Character& player) {
 	ifstream npcFile;
 	npcFile.open("npcList.txt");
 	findNPC(npcFile, shadow, "shadow");
-	if (choice = 1) {
+	if (choice == 1) {
 		//Description of encounter
 		cout << "You approach the man, calling out to alert him that you are approaching." << endl;
 		cout << "The man turns slowly -- standing to reveal that he is holding a knife." << endl;
@@ -52,14 +51,12 @@ int forest (Character& player) {
 					cout << "as if he never had existed at all." << endl;
 					npcArray[0]=1;
 					choice = 0;
-					// Find a weapon
     				}
     			else if (player.totalHealth < 5 && player.totalHealth > 0) {
     				cout << "The man falls to the ground, black spirals spreading about the pebbles and air, and you" << endl;
 					cout << "feel a great surge of unsettling emotion." << endl;
 					npcArray[0]=1;
 					choice = 0;
-					// Find a weapon
     				}
 			else {
 				return 1;
@@ -69,8 +66,6 @@ int forest (Character& player) {
 				}
 		}
 	}
-	
-	
 	setIsDead (beachNPC, npcArray, 4);
 	
 }
