@@ -66,8 +66,8 @@ int forest (Character& player) {
 					while (flag == 0) {
 						cin >> choice;
 						if (choice == 1) {
-							cout >> "You get down on your knees and sift through the dry dirt." << endl;
-							cout >> "You found a leather helmet." << endl;
+							cout << "You get down on your knees and sift through the dry dirt." << endl;
+							cout << "You found a leather helmet." << endl;
 							//Set leatherHelmet = 1
 							flag++;
 						else if (choice == 2) {
