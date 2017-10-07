@@ -94,7 +94,7 @@ int beach (Character& player) {
 	cout << "You notice a cave ahead. It is very dark, yet large enough to comfortably walk around in and use as shelter." << endl;
 	cout << "Maybe it is home to a bear?" << endl << endl;
 	cout << "What do you want to do?" << endl;
-	cout << "1. Go inside the cave." << endl << 2. "Continue to explore the beach." << endl;
+	cout << "1. Go inside the cave." << endl << "2. Continue to explore the beach." << endl;
 	flag = 0;
 	while (flag == 0) {
 		
