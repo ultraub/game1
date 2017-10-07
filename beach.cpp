@@ -67,5 +67,36 @@ int beach (Character& player) {
 		}
 	}
 	setIsDead (beachNPC, npcArray, 4);
+	if(npcArray[0] == 1) {
+		cout << "Your head is pounding, full of questions and fear. You notice a knife " << endl;
+		cout << "begin to appear as the fog of what was a man clears." << endl << endl;
+		cout << "Do you wish to pick up the knife?" << endl;
+		cin >> response;
+		if (response == "yes") {
+			cout << "You pick up the knife, noticing the intricacy of design that has been etched into the blade." << endl;
+			// pickup knife
+		}
+		else if (response == "no") {
+			cout << "You decide to leave the knife in effort to wipe all memories of this horrid experience." << endl;
+		}
+		else {
+			cout << "Please enter 'yes' or 'no'." << endl;
+		}
+	}
+	cout << "You continue to walk along the beach. Your skin crawls with the overwhelming feeling that you are being watched." << endl;
+	cout << "As if to calm your nerves, the horizon lights up with dark orange and yellow as the sun sets. You feel slightly relieved." << endl; 
+	cout << "You notice a cave ahead. It is very dark, yet large enough to comfortably walk around in and use as shelter." << endl;
+	cout << "Maybe it is home to a bear?" << endl << endl;
+	cout << "What do you want to do?" << endl;
+	cout << "1. Go inside the cave." << endl << 2. "Continue to explore the beach." << endl;
+	cin >> response;
+		if (response == "1") {
+			//Make sure to check for torch
+			cout <<"It's a good thing you grabbed that torch! You light it and walk inside." << endl;
+		}
+		else if (response == "2") {
+			cout <<"You decide to continue walking around the beach, looking for clues for what is going on." << endl;
+		}
+	}
 	
 }
