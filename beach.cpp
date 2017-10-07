@@ -111,7 +111,5 @@ int beach (Character& player) {
 		else { 
 			cout <<"Please enter a valid command." << endl;
 		}
-		}
 	}
-	
 }
