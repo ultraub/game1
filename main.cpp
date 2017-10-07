@@ -16,7 +16,7 @@ weaponFile.open("primaryWeapons.txt");
 readInventory (weaponFile,weapon);
 
 // Update the third parameter as we add more weapons
-writeInventory(weaponFile,weapon,3);
+//writeInventory(weaponFile,weapon,3);
 
 	Character player;
 	ifstream inFile;
