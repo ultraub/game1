@@ -52,12 +52,14 @@ int forest (Character& player) {
 					cout << "as if he never had existed at all." << endl;
 					npcArray[0]=1;
 					choice = 0;
+					// Find a weapon
     				}
     			else if (player.totalHealth < 5 && player.totalHealth > 0) {
     				cout << "The man falls to the ground, black spirals spreading about the pebbles and air, and you" << endl;
 					cout << "feel a great surge of unsettling emotion." << endl;
 					npcArray[0]=1;
 					choice = 0;
+					// Find a weapon
     				}
 			else {
 				return 1;
@@ -67,6 +69,8 @@ int forest (Character& player) {
 				}
 		}
 	}
+	
+	
 	setIsDead (beachNPC, npcArray, 4);
 	
 }
