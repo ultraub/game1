@@ -16,6 +16,7 @@ extern void saveData(ofstream&, Character& object);
 void printNumber(int);
 extern int house();
 extern int forest(Character& object);
+extern int beach(Character& object);
 extern void setLocation (Character& object);
 
 int fightFunction(Character& object, NPC& object1);
