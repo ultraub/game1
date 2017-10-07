@@ -48,8 +48,8 @@ void readInventory (fstream &inFile, primary weaponArr[]) {
 	string line;
 	int value, i=0;
 	while (!inFile.eof()) {
-                inFile >> line;
-                weaponArr[i].name = line;
+        inFile >> line;
+        weaponArr[i].name = line;
 		inFile >> value;
 		weaponArr[i].damage = value;
 		inFile >> value; 
@@ -68,6 +68,32 @@ void writeInventory (fstream &inFile, primary weaponArr[], int count)  {
 		inFile << weaponArr[i].damage << endl;
 		inFile << weaponArr[i].equipped << endl;
 		inFile << weaponArr[i].found << endl;
+		i++;
+	}
+}
+void readArmor(fstream &inFile, armor armorArr[]) {
+	string line;
+	int value, i = 0;
+	while (!inFile.eof()) {
+		inFile >> line;
+		armorArr[i].name = line;
+		inFile >> value;
+		armorArr[i].bonusHealth = value;
+		inFile >> value;
+		armorArr[i].equipped = value;
+		inFile >> value;
+		armorArr[i].found = value;
+		i++;
+	}
+	inFile.clear();
+	inFile.seekg(0, ios::beg);
+}
+void writeArmor(fstream &inFile, armor armorArr[], int count) {
+	int i = 0;
+	while (i < count) {
+		inFile << armorArr[i].name << endl;
+		inFile << armorArr[i].equipped << endl;
+		inFile << armorArr[i].found << endl;
 		i++;
 	}
 }
@@ -94,7 +120,7 @@ int fightFunction (Character& player, NPC& enemy) {
 	cout << "Your opponent has " << enemy.totalHealth << " health." << endl;
 	cout << "You have " << player.totalHealth << " health." << endl;
 	while (enemy.totalHealth > 0) {
-		cout << "You attack with " << player.damage << " damage." << endl;
+		cout << "You attack with " << player.primary << " for " << player.damage << " damage." << endl;
 		enemy.totalHealth = enemy.totalHealth - player.damage;
 		cout << "Your opponent now has " << enemy.totalHealth << " health." << endl;
 		if (enemy.totalHealth > 0) {
