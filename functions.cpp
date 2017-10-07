@@ -92,6 +92,7 @@ void writeArmor(fstream &inFile, armor armorArr[], int count) {
 	int i = 0;
 	while (i < count) {
 		inFile << armorArr[i].name << endl;
+		inFile << armorArr[i].bonusHealth << endl;
 		inFile << armorArr[i].equipped << endl;
 		inFile << armorArr[i].found << endl;
 		i++;
