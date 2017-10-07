@@ -8,3 +8,8 @@ goblin
 goblin
 2
 7
+
+shadow
+shadow
+4
+15
