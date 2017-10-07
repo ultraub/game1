@@ -66,7 +66,7 @@ int beach (Character& player) {
 				}
 		}
 	}
-	setIsDead (beachNPC, npcArray, 4);
+	//setIsDead (beachNPC, npcArray, 4);
 	if(npcArray[0] == 1) {
 		cout << "Your head is pounding, full of questions and fear. You notice a knife " << endl;
 		cout << "begin to appear as the fog of what was a man clears." << endl << endl;
@@ -111,5 +111,8 @@ int beach (Character& player) {
 		else { 
 			cout <<"Please enter a valid command." << endl;
 		}
-	}
+	}	
+	beachNPC.close();
+	npcFile.close();
+	return 1;
 }
