@@ -20,6 +20,11 @@ class Character
     string secondary;
     int totalHealth;
     int damage;
+    int houseProgress;
+    int forestProgress;
+    int beachProgress;
+    int graveyardProgress;
+	int ruins;
     // Member Functions()
     void printname()
     {
