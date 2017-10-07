@@ -118,15 +118,21 @@ void setLocation (Character& player) {
 
 
 int fightFunction (Character& player, NPC& enemy) {
+        int playerDamage = player.damage;
+        int npcDamage = enemy.damage;
+
+	srand(time(NULL));
 	cout << "Your opponent has " << enemy.totalHealth << " health." << endl;
 	cout << "You have " << player.totalHealth << " health." << endl;
 	while (enemy.totalHealth > 0) {
-		cout << "You attack with " << player.primary << " for " << player.damage << " damage." << endl;
-		enemy.totalHealth = enemy.totalHealth - player.damage;
+		playerDamage = rand() % player.damage + 1;
+		npcDamage = rand() % enemy.damage +1;
+		cout << "You attack with " << player.primary << " for " << playerDamage << " damage." << endl;
+		enemy.totalHealth = enemy.totalHealth - playerDamage;
 		cout << "Your opponent now has " << enemy.totalHealth << " health." << endl;
 		if (enemy.totalHealth > 0) {
-			cout << "Your opponent attacks you for " << enemy.damage << " damage." << endl;
-			player.totalHealth = player.totalHealth - enemy.damage;
+			cout << "Your opponent attacks you for " << npcDamage << " damage." << endl;
+			player.totalHealth = player.totalHealth - npcDamage;
 			cout << "You have " << player.totalHealth << " health." << endl;
 			if (player.totalHealth <= 0) {
 				cout << "You have failed to defeat " << enemy.charName << " and paid the ultimate price." << endl;
