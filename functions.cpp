@@ -14,6 +14,10 @@ void readData (ifstream &inFile, Character& player) {
 	string secondary;
 	int health;
 	int damage;
+	int houseProgress;
+    int forestProgress;
+    int beachProgress;
+    int graveyardProgress;
     // Read from file and put in object that understands the data
 	inFile >> location;
 	inFile >> name;
@@ -21,12 +25,20 @@ void readData (ifstream &inFile, Character& player) {
 	inFile >> secondary;
 	inFile	>> health;
 	inFile	>> damage;
+	inFile >> houseProgress;
+	inFile >> forestProgress;
+	inFile >> beachProgress;
+	inFile >> graveyardProgress;
 	player.location = location;
 	player.charname = name;
 	player.primary = primary;
 	player.secondary = secondary; 
 	player.totalHealth = health;
 	player.damage = damage;
+	player.houseProgress = houseProgress;
+	player.forestProgress = forestProgress;
+	player.beachProgress = beachProgress;
+	player.graveyardProgress = graveyardProgress;
 	inFile.clear();
 	inFile.seekg(0, ios::beg);
 	}
@@ -66,7 +78,11 @@ void saveData (ofstream &inFile, Character& player) {
 	inFile << player.primary << endl;
 	inFile << player.secondary << endl;
 	inFile << player.totalHealth << endl;
-	inFile << player.damage; 
+	inFile << player.damage << endl;
+	inFile << player.houseProgress << endl;
+	inFile << player.forestProgress << endl;
+	inFile << player.beachProgress << endl;
+	inFile << player.graveyardProgress;
 }
 
 void setLocation (Character& player) {
