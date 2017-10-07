@@ -107,6 +107,7 @@ int beach (Character& player) {
 		else if (response == "2") {
 			cout <<"You decide to continue walking around the beach, looking for clues for what is going on." << endl;
 			flag = 1;
+		}
 		else { 
 			cout <<"Please enter a valid command." << endl;
 		}
